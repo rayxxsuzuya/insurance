@@ -7,6 +7,26 @@ $(function() {
         dots: false,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 1048,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 760,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 507,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
       });
 });
 
@@ -30,8 +50,6 @@ for (let x = 0; x < tabs.length; x++) {
 
 let button = document.querySelectorAll('.policy-arrow__wrapper');
 let show = document.querySelectorAll('.policy__show');
-
-console.log(button);
 
 
 for (let i = 0; i < button.length; i++) {
